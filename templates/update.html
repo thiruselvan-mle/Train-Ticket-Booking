@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Booking</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Update Booking</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, msg in messages %}
+        <p style="color:green;">{{ msg }}</p>
+      {% endfor %}
+    {% endwith %}
+    <form method="POST">
+      <input type="number" name="booking_id" placeholder="Booking ID" required><br>
+      <select name="class_type" required>
+        <option value="">Select New Class</option>
+        <option>Sleeper</option>
+        <option>3rd AC</option>
+        <option>2nd AC</option>
+        <option>1st AC</option>
+      </select><br>
+      <button type="submit">Update</button>
+    </form>
+    <a href="{{ url_for('base') }}">⬅ Back</a>
+  </div>
+</body>
+</html>

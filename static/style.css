@@ -1,0 +1,205 @@
+/* 🌈 Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🧱 Main Container */
+.container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* 🧩 Headings */
+h2 {
+  color: #0072ff;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* 📝 Form Elements */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  border-color: #0072ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 114, 255, 0.4);
+}
+
+/* 🚀 Buttons */
+button {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0052cc, #008cff);
+  transform: scale(1.03);
+}
+
+/* 🔗 Links */
+a {
+  text-decoration: none;
+  color: #0072ff;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #0052cc;
+  text-decoration: underline;
+}
+
+/* ⚠️ Flash Messages */
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+p.success {
+  color: green;
+}
+
+p.error {
+  color: red;
+}
+
+/* 📋 Tables (Train List Page) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #0072ff;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  background: #f5f9ff;
+  padding: 10px;
+}
+
+tr:nth-child(even) td {
+  background: #e9f3ff;
+}
+
+td a {
+  color: white;
+  background: #00c6ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+td a:hover {
+  background: #0072ff;
+}
+
+/* 🎫 Ticket Page (book.html) */
+.ticket-box {
+  border: 2px dashed #0072ff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  background: #f8fbff;
+  width: 40%;
+  height: 40%;
+}
+
+.ticket-box h3 {
+  color: #0072ff;
+  margin-bottom: 10px;
+}
+
+.ticket-box p {
+  color: #333;
+  margin: 5px 0;
+}
+
+/* 🔄 Back & Logout Links */
+.links {
+  margin-top: 15px;
+}
+
+.links a {
+  margin: 0 10px;
+  background: #0072ff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.links a:hover {
+  background: #0052cc;
+}
+
+/* 💻 Responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+.front-from{
+
+  text-align: left;
+  padding-right: 75%;
+}
+
+.front-to{
+
+  text-align: left;
+  padding-right: 80%;
+}
+
+.front-date{
+
+  text-align: left;
+  padding-right: 88%;
+}
+
+.front-time{
+
+  text-align: left;
+  padding-right: 88%;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Search | Train Ticket</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome {{ username }} 🚄</h2>
+    
+    <form method="POST">
+      
+      <!-- FROM STATION -->
+      <label class="front-from">From Station:</label><br>
+      <select name="from_station" required>
+        <option value="">-- Select From Station --</option>
+        <option>Chennai Central</option>
+        <option>Coimbatore</option>
+        <option>Madurai</option>
+        <option>Tiruchirappalli</option>
+        <option>Salem</option>
+        <option>Erode</option>
+        <option>Vellore</option>
+        <option>Villupuram</option>
+        <option>Thanjavur</option>
+        <option>Tuticorin</option>
+        <option>Palakkad</option>
+        <option>Bangalore</option>
+        <option>Mysuru</option>
+        <option>Hyderabad</option>
+        <option>Secunderabad</option>
+        <option>Vijayawada</option>
+        <option>Visakhapatnam</option>
+        <option>Tirupati</option>
+        <option>Nellore</option>
+        <option>Warangal</option>
+        <option>Kanchipuram</option>
+        <option>Cuddalore</option>
+        <option>Thoothukudi</option>
+        <option>Nagercoil</option>
+        <option>Katpadi</option>
+        <option>Karur</option>
+        <option>Namakkal</option>
+        <option>Pollachi</option>
+        <option>Dindigul</option>
+        <option>Rameswaram</option>
+      </select><br>
+
+      <!-- TO STATION -->
+      <label class="front-to">To Station:</label><br>
+      <select name="to_station" required>
+        <option value="">-- Select To Station --</option>
+        <option>Chennai Central</option>
+        <option>Coimbatore</option>
+        <option>Madurai</option>
+        <option>Tiruchirappalli</option>
+        <option>Salem</option>
+        <option>Erode</option>
+        <option>Vellore</option>
+        <option>Villupuram</option>
+        <option>Thanjavur</option>
+        <option>Tuticorin</option>
+        <option>Palakkad</option>
+        <option>Bangalore</option>
+        <option>Mysuru</option>
+        <option>Hyderabad</option>
+        <option>Secunderabad</option>
+        <option>Vijayawada</option>
+        <option>Visakhapatnam</option>
+        <option>Tirupati</option>
+        <option>Nellore</option>
+        <option>Warangal</option>
+        <option>Kanchipuram</option>
+        <option>Cuddalore</option>
+        <option>Thoothukudi</option>
+        <option>Nagercoil</option>
+        <option>Katpadi</option>
+        <option>Karur</option>
+        <option>Namakkal</option>
+        <option>Pollachi</option>
+        <option>Dindigul</option>
+        <option>Rameswaram</option>
+      </select><br>
+
+      <!-- DATE -->
+      <label class="front-date">Date:</label><br>
+      <input type="date" name="date" required><br>
+
+      <!-- TIME -->
+      <label class="front-time">Time:</label><br>
+      <select name="time" required>
+        <option value="">-- Select Time --</option>
+        <option>06:00 AM</option>
+        <option>07:30 AM</option>
+        <option>08:45 AM</option>
+        <option>09:30 AM</option>
+        <option>10:00 AM</option>
+        <option>11:15 AM</option>
+        <option>12:30 PM</option>
+        <option>01:45 PM</option>
+        <option>02:30 PM</option>
+        <option>03:15 PM</option>
+        <option>04:00 PM</option>
+        <option>05:00 PM</option>
+        <option>06:00 PM</option>
+        <option>07:30 PM</option>
+        <option>08:00 PM</option>
+        <option>09:00 PM</option>
+      </select><br>
+
+      <button type="submit">Search Train</button>
+    </form>
+
+    <hr>
+    <a href="{{ url_for('cancel') }}">Cancel Booking</a> |
+    <a href="{{ url_for('update') }}">Update Booking</a> |
+    <a href="{{ url_for('logout') }}">Logout</a>
+  </div>
+</body>
+</html>

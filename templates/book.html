@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket Confirmation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="ticket-box">
+    <h3>🚆 Train Ticket Confirmation</h3>
+
+    <p><b>Passenger:</b> {{ booking.name }} ({{ booking.gender }}, {{ booking.age }} yrs)</p>
+    <p><b>Email:</b> {{ booking.email }}</p>
+    <p><b>Phone:</b> {{ booking.phone }}</p>
+
+    <hr>
+    <p><b>Train:</b> {{ train.train_name }} ({{ train.from_station }} ➜ {{ train.to_station }})</p>
+    <p><b>Class:</b> {{ booking.class_type }}</p>
+    <p><b>Journey Date:</b> {{ train.date }}</p>
+    <p><b>Departure Time:</b> {{ train.time }}</p>
+
+    <hr>
+    <div class="id-box">
+      <p><b>🎫 Your Booking/User ID:</b> {{ booking.id }}</p>
+      <p><small>⚠️ Keep this ID safe — you'll need it for Update or Cancel.</small></p>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="{{ url_for('base') }}">⬅ Back</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+  </div>
+</body>
+</html>

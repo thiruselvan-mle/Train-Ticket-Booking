@@ -1,0 +1,66 @@
+    {% extends "base.html" %}
+    {% block title %}Search Train{% endblock %}
+    {% block content %}
+    <h2 class="mb-4 text-center">🔍 Search Trains</h2>
+
+    <form action="/search" method="POST" class="row g-3 justify-content-center">
+        <div class="col-md-3">
+            <label class="form-label">From Station</label>
+            <input type="text" name="from_station" class="form-control" required>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">To Station</label>
+            <input type="text" name="to_station" class="form-control" required>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Date</label>
+            <input type="date" name="journey_date" class="form-control" required>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Time</label>
+            <input type="time" name="journey_time" class="form-control" required>
+        </div>
+        <div class="col-md-1">
+            <label class="form-label">AM/PM</label>
+            <select name="ampm" class="form-select">
+                <option>AM</option>
+                <option>PM</option>
+            </select>
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+
+    {% if trains %}
+        <hr>
+        <h4 class="mt-4 text-center">Available Trains</h4>
+        <table class="table table-bordered table-striped mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>Train No</th>
+                    <th>Train Name</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Seats Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for train in trains %}
+                <tr>
+                    <td>{{ train[0] }}</td>
+                    <td>{{ train[1] }}</td>
+                    <td>{{ train[2] }}</td>
+                    <td>{{ train[3] }}</td>
+                    <td>{{ train[4] }}</td>
+                    <td>{{ train[5] }}</td>
+                    <td>{{ train[6] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+    {% endblock %}
