@@ -25,11 +25,11 @@ Users can sign up, log in, search for trains, book tickets, update bookings, and
 
  ## ⚙️ Tech Stack
  ```bash
-    Category	Technologies Used
-    Backend	    Flask (Python)
-    Database	MySQL
-    Frontend	HTML, CSS
-    Server	    Flask Development Server
+    Category  -	 Technologies Used
+    Backend	  -  Flask (Python)
+    Database  -	 MySQL
+    Frontend  -	 HTML, CSS
+    Server	  -  Flask Development Server
 ``` 
 
 ---
@@ -100,8 +100,8 @@ flask run
 
  - Login Page -adding soon
 
- -Train Search -adding soon
+ - Train Search -adding soon
 
- -Ticket Booking -adding soon
+ - Ticket Booking -adding soon
 
- -Confirmation Page -adding soon
+ - Confirmation Page -adding soon
