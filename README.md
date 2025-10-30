@@ -39,7 +39,8 @@ Users can sign up, log in, search for trains, book tickets, update bookings, and
 Train-Ticket-booking/
 │
 ├── static/
-│   └── style.css          # Styles for the app
+│   ├── style.css          # Styling for all pages
+│   └── demo.js            # JS file for interactivity and UI enhancements
 │
 ├── templates/
 │   ├── base.html          # Search trains page
@@ -51,7 +52,7 @@ Train-Ticket-booking/
 │   ├── update.html        # Update ticket page
 │   └── cancel.html        # Cancel ticket page
 │
-├── app.py                 # Flask main application
+├── app.py                 # Flask main application file
 └── README.md              # Project documentation
 ```
 
@@ -61,7 +62,7 @@ Train-Ticket-booking/
 
 ### Clone this repository:
 ```bash
-git clone https://github.com/yourusername/train-ticket-booking.git
+git clone https://github.com/thiruselvan-mle/Train-Ticket-Booking.git
 cd train-ticket-booking
 ```
 
@@ -98,10 +99,14 @@ flask run
 
 ## 📸 Screenshots
 
- - Login Page -adding soon
+ - Login Page
+ <img src="static/login.png" height=600 weight=100%>
 
  - Train Search -adding soon
+ <img src="static/search.png" height=600 weight=100%>
 
  - Ticket Booking -adding soon
+ <img src="static/book.png" height=600 weight=100%>
 
  - Confirmation Page -adding soon
+ <img src="static/confirm.png" height=600 weight=100%>

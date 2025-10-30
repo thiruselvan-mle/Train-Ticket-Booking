@@ -203,3 +203,28 @@ td a:hover {
   text-align: left;
   padding-right: 88%;
 }
+
+.base-bg {
+  background-image: url("base.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* makes text visible on dark bg */
+}
+
+
+.book-bg {
+  background-image: url("train.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* makes text visible on dark bg */
+}
+
+
