@@ -101,12 +101,12 @@ flask run
 
  - Login Page
  <img src="static/login.png" height=600 weight=100%>
-
+---
  - Train Search -adding soon
  <img src="static/search.png" height=600 weight=100%>
-
+---
  - Ticket Booking -adding soon
  <img src="static/book.png" height=600 weight=100%>
-
+---
  - Confirmation Page -adding soon
  <img src="static/confirm.png" height=600 weight=100%>
