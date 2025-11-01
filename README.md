@@ -78,6 +78,7 @@ pip install flask mysql-connector-python
 ```
 
 ### Update MySQL credentials in app.py:
+ - create database and required tables in filess.io and connect to use
 ```bash
 conn = mysql.connector.connect(
     host="your_host",
