@@ -87,6 +87,7 @@ conn = mysql.connector.connect(
     database="your_database",
     port="your_port"
 )
+
 ```
 
 ### Run the app:
@@ -102,14 +103,17 @@ flask run
 
  - Login Page
  <img src="static/login.png" height=600 weight=100%>
+
 ---
 
  - Train Search
  <img src="static/search.png" height=600 weight=100%>
+
 ---
 
  - Ticket Booking
  <img src="static/book.png" height=600 weight=100%>
+ 
 ---
 
  - Confirmation Page
